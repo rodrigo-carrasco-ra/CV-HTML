@@ -1,23 +1,56 @@
-header h1
+header 
 {
 	text-align:center;
-	color:red;
+	color: #14094E;
 	font-size:20px;
+	font-weight: bold;
+	text-decoration: none;
+	font-family: 'Frank Ruhl Libre', serif;
 }
 	
-header h2
+article
 {
-	text-align:center;
-	color:green;
-	font-size:20px;
+width: 1800px;
+height:1550px;
+background-color:#f1eff8;
+text-align:justify-all;
+margin: 0 auto;
+border-radius: 0px;
+	
 }
 
+article h4
+{
+	border-bottom-style: solid;
+  font-family: 'Vollkorn', serif;
+  font-size: larger;
+  
 
-.imagen {float:left}
+}
+article h4:hover{
+  color: white;
+  background-color: #14094E;
+  transition:all 0.2s linear;
+}
 
+article p
+{
+  font-family: 'Vollkorn', serif;
+  font-size: 21px;
+}
 
+.imagen 
+{
+  float:left
+}
 
-.fila {
+address {
+  display: block;
+  font-style:normal;
+}
+
+.fila 
+{
 	display: flex;
 	margin-left:-5px;
   	margin-right:-5px;
@@ -25,42 +58,52 @@ header h2
 	
 }
 
-.columna1 {
-  padding: 5px; column-fill: balance; max-width: 35%;
+.columna1 
+{
+  padding: 5px; 
+  column-fill: balance; 
+  max-width: 30%;
 }
 
-.columna2 {
+.columna2 
+{
   flex: 50%;
-  padding: 5px; column-fill: balance; max-width: 55%;
+  padding: 5px; 
+  column-fill: balance; 
+  max-width: 70%;
 }
 
-table {
+table 
+{
   border-collapse: collapse;
   border-spacing: 0;
   width: 100%;
   border: 1px solid #ddd;
+  border: none;
 }
 
-tr, td {
+tr, td 
+{
   text-align: left;
   padding: 16px;
 }
 
-.barra { 
+.barra 
+{ 
   height: 5px;  
   position: relative;
   background: rgb(53, 39, 160);
   border-radius: 25px;
   padding: 10px;
 }
-.barra > span {
+.barra > span 
+{
   display: block;
   height: 100%;
   border-top-right-radius: 8px;
   border-bottom-right-radius: 8px;
   border-top-left-radius: 20px;
   border-bottom-left-radius: 20px;
-  
   box-shadow: 
     inset 0 2px 9px  rgb(248, 248, 248),
     inset 0 -2px 6px rgb(255, 255, 255);
@@ -68,7 +111,33 @@ tr, td {
   overflow: hidden;
 }
 
-.checked {
+.checked 
+{
   color: rgb(151, 147, 182);
 }
 
+/* link no visitado */
+a:link {
+  color: black;
+}
+
+/* link visitado */
+a:visited {
+  color: rgb(35, 13, 57);
+}
+
+/* mouse sobre el link*/
+a:hover {
+  background-color: black;
+  color: white;
+}
+
+/* link seleccionado*/
+a:active {
+  color: yellow;
+}
+
+footer
+{
+  text-align: center;
+}
